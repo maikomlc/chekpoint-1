@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vincent van Gogh</title>
+  <title>Vincent van Gogh Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,20 +11,75 @@
       margin: 20px;
       max-width: 800px;
     }
-
-    img {
+    img, iframe {
       max-width: 100%;
       height: auto;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+      background-color: #eee;
+      padding: 10px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Vincent van Gogh</h1>
-  </header>
+  <!-- Navbar with local page links -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main>
+  <!-- Home section -->
+  <section id="home">
+    <header>
+      <h1>Vincent van Gogh</h1>
+    </header>
+  </section>
+
+  <!-- About section with your current content -->
+  <section id="about">
     <figure>
       <img src="15458.png.webp" alt="Portrait of Vincent van Gogh" />
       <figcaption>Vincent van Gogh</figcaption>
@@ -51,7 +106,77 @@
         Additionally, Van Gogh created 43 self-portraits, offering another window into his evolving identity as an artist. Together, his artworks and writings offer us multiple perspectives on his genius, beyond just paint on canvas.
       </p>
     </article>
-  </main>
+
+    <!-- Embedded YouTube Video -->
+    <figure>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/kkaXHyB9pp8" title="Vincent van Gogh - Between Tragic Creativity and Insanity | Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <figcaption>Vincent van Gogh - Documentary</figcaption>
+    </figure>
+  </section>
+
+  <!-- Work section with a list -->
+  <section id="work">
+    <h2>Work Highlights</h2>
+    <ul>
+      <li><strong>Sunflowers</strong> - A vibrant still life painting of sunflowers.</li>
+      <li><strong>The Starry Night</strong> - One of his most famous landscapes featuring swirling stars.</li>
+      <li><strong>Café Terrace at Night</strong> - A lively street scene illuminated at night.</li>
+      <li><strong>Irises</strong> - A detailed floral painting highlighting color and form.</li>
+    </ul>
+  </section>
+
+  <!-- Resume section with a simple table -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1853</td>
+          <td>Born in Netherlands</td>
+        </tr>
+        <tr>
+          <td>1886</td>
+          <td>Moved to Paris and met Impressionists</td>
+        </tr>
+        <tr>
+          <td>1888</td>
+          <td>Created many masterpieces in Arles</td>
+        </tr>
+        <tr>
+          <td>1890</td>
+          <td>Died in France</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact section with a form -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vincent van Gogh Portfolio. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
