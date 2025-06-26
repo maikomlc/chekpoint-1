@@ -1620,7 +1620,7 @@ function showItems(category) {
     <img src="${item.img}" alt="${item.name}" />
     <h1>${item.name}</h1>
       <p><strong>Origin:</strong> ${item.origin}</p>
-      <p><strong>Recipe:</strong> ${item.recipe}</p>
+      <p><strong>ingredients:</strong> ${item.ingredients}</p>
       <a href="${item.video}" target="_blank">▶️ YouTube</a> |
       <a href="${item.wiki}" target="_blank">📖 Wikipedia</a>
     `;
@@ -1685,7 +1685,7 @@ function createItemCard(item) {
   <img src="${item.img}" alt="${item.name}" />
    <h3>${item.name}</h3>
     <p><strong>Origin:</strong> ${item.origin}</p>
-    <p><strong>Recipe:</strong> ${item.recipe}</p>
+    <p><strong>Recipe:</strong> ${item.ingredients}</p>
     <a href="${item.video}" target="_blank" rel="noopener noreferrer">▶️ YouTube</a> |
     <a href="${item.wiki}" target="_blank" rel="noopener noreferrer">📖 Wikipedia</a>
   `;
